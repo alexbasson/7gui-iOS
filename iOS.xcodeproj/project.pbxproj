@@ -17,7 +17,8 @@
 		572667B92C6A81AC00C96905 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 572667B82C6A81AC00C96905 /* ViewInspector */; };
 		572667BC2C6A825500C96905 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 572667BB2C6A825500C96905 /* Quick */; };
 		572667BF2C6A829A00C96905 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 572667BE2C6A829A00C96905 /* Nimble */; };
-		572667C12C6A82D300C96905 /* FooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572667C02C6A82D300C96905 /* FooTests.swift */; };
+		572667C32C6A9DD500C96905 /* CounterViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572667C22C6A9DD500C96905 /* CounterViewSpec.swift */; };
+		572667C52C6AA06A00C96905 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572667C42C6AA06A00C96905 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		572667A42C6A7C7D00C96905 /* iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		572667A82C6A7C7D00C96905 /* iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUITests.swift; sourceTree = "<group>"; };
 		572667AA2C6A7C7D00C96905 /* iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		572667C02C6A82D300C96905 /* FooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooTests.swift; sourceTree = "<group>"; };
+		572667C22C6A9DD500C96905 /* CounterViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewSpec.swift; sourceTree = "<group>"; };
+		572667C42C6AA06A00C96905 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5726678F2C6A7C7900C96905 /* ContentView.swift */,
 				572667912C6A7C7C00C96905 /* Assets.xcassets */,
 				572667932C6A7C7D00C96905 /* Preview Content */,
+				572667C42C6AA06A00C96905 /* CounterView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -122,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				5726679E2C6A7C7D00C96905 /* iOSTests.swift */,
-				572667C02C6A82D300C96905 /* FooTests.swift */,
+				572667C22C6A9DD500C96905 /* CounterViewSpec.swift */,
 			);
 			path = iOSTests;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				572667902C6A7C7900C96905 /* ContentView.swift in Sources */,
 				5726678E2C6A7C7900C96905 /* iOSApp.swift in Sources */,
+				572667C52C6AA06A00C96905 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572667C12C6A82D300C96905 /* FooTests.swift in Sources */,
 				5726679F2C6A7C7D00C96905 /* iOSTests.swift in Sources */,
+				572667C32C6A9DD500C96905 /* CounterViewSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

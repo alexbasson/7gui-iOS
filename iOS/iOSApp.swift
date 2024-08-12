@@ -11,7 +11,32 @@ import SwiftUI
 struct iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                CounterView()
+                    .tabItem {
+                        Label("Counter", systemImage: "plus.circle")
+                    }
+                
+                ContentView()
+                    .tabItem {
+                        Label("Temp", systemImage: "thermometer.medium")
+                    }
+                
+                ContentView()
+                    .tabItem {
+                        Label("Flights", systemImage: "airplane")
+                    }
+                
+                ContentView()
+                    .tabItem {
+                        Label("Timer", systemImage: "timer")
+                    }
+                
+                ContentView()
+                    .tabItem {
+                        Label("CRUD", systemImage: "list.dash")
+                    }
+            }
         }
     }
 }
