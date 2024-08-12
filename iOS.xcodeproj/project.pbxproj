@@ -14,6 +14,7 @@
 		5726679F2C6A7C7D00C96905 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5726679E2C6A7C7D00C96905 /* iOSTests.swift */; };
 		572667A92C6A7C7D00C96905 /* iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572667A82C6A7C7D00C96905 /* iOSUITests.swift */; };
 		572667AB2C6A7C7D00C96905 /* iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572667AA2C6A7C7D00C96905 /* iOSUITestsLaunchTests.swift */; };
+		572667B92C6A81AC00C96905 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 572667B82C6A81AC00C96905 /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572667B92C6A81AC00C96905 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +163,9 @@
 				5726679C2C6A7C7D00C96905 /* PBXTargetDependency */,
 			);
 			name = iOSTests;
+			packageProductDependencies = (
+				572667B82C6A81AC00C96905 /* ViewInspector */,
+			);
 			productName = iOSTests;
 			productReference = 5726679A2C6A7C7D00C96905 /* iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 572667812C6A7C7900C96905;
+			packageReferences = (
+				572667B72C6A81AC00C96905 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 5726678B2C6A7C7900C96905 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -582,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		572667B72C6A81AC00C96905 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		572667B82C6A81AC00C96905 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 572667B72C6A81AC00C96905 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 572667822C6A7C7900C96905 /* Project object */;
 }
